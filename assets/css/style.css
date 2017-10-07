@@ -1,0 +1,29 @@
+.container {
+	background-image: url("../images/vintage.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	font-family: "Georgia", "Times", "Times New Roman", "serif";
+	line-height: 150%;
+	font-size: 18px;
+}
+
+.letter {
+	font-size: 30px;
+	border-width: 2px;
+	border-style: solid;
+	width: 1em;
+	height: 1em;
+	margin-right: 5px;
+	float: left;
+	background-color:  rgba(255, 255, 255, .5);
+	text-align: center;
+
+}
+
+#status {
+	background-color:  rgba(255, 255, 255, .5);
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px
+}
+

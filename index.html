@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body class="container">
+	<div class="row welcome">
+		<div class="col-md-12 text-center">
+			<h1>Welcome to Hangman</h1>
+		</div>
+	</div>
+	<hr>
+	<div class="row game-body">
+		<div class="col-md-6">
+			<div id="status">
+			<div class="instructions">
+				<p>
+					Press any letter to get started. If you guess wrong 7 times then you lose. If you guess right before your tries are up then you win!
+				</p>	
+			</div>
+			<div id="wins"> 
+				<h2>Wins: <span id="win-number">0</span></h2>
+			</div>
+			<div id="losses">
+				<h2>Losses: <span id="loss-number">0</span></h2>
+			</div>
+			<div id="tries">
+				<h2>Tries: <span id="tries-number">7</span></h2>
+
+			</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="word-guess">
+				<h2>Your Word Is:</h2>
+				<div id="word">
+
+				</div>
+				<br>
+				<div class="your-letters">
+					<h2>You have picked:<br><span id="letters-picked"></span></h2>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="assets/javascript/game.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
