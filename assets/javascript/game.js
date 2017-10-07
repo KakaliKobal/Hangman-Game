@@ -107,7 +107,7 @@ document.onkeyup = function(event) {
 }
 
 function loseGame() {
-	alert("You missed too many letters, try again.");
+	displayAlert("Oops!","You missed too many letters, try again.");
 	defeat++;
 	updateDefeat();
 	startGame();
