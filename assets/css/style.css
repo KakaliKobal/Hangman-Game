@@ -1,7 +1,9 @@
 .container {
-	background-image: url("../images/vintage.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
+	background: url(../images/vintage.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	font-family: "Georgia", "Times", "Times New Roman", "serif";
 	line-height: 150%;
 	font-size: 18px;
