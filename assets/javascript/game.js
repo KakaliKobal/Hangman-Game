@@ -18,6 +18,7 @@ function startGame() {
 	tries = 7;
 	updateTries();
 	lettersGuessed = [];
+	updateUsedLetters();
 	chosenWord = wordChoices[random];
 	word = new Array(chosenWord.length);
 	var targetLetter = document.getElementById("word");
@@ -34,6 +35,8 @@ function startGame() {
 function updateTries() {
 	var triesElement = document.getElementById("tries-number");
 	triesElement.innerHTML = "" + tries;
+	var man = document.getElementById("man");
+	man.setAttribute("class", "man-" + tries);
 }
 
 function updateDefeat() {
@@ -72,11 +75,15 @@ function getAllIndexes(arr, val) {
 
 document.onkeyup = function(event) {
 	var userGuess = event.key;
+
+	if (userGuess.replace(/^[A-Za-z]/g, "") != "")
+		return;
+
 	if (lettersGuessed.indexOf(userGuess) == -1) {
 		lettersGuessed.push(userGuess);
 		updateUsedLetters();
 	} else {
-		alert("You have already used that letter");
+		displayAlert("Nuh-Uh!", "You've already used that letter!");
 		return
 	}
 	indexes = getAllIndexes(chosenWord, userGuess);
@@ -84,7 +91,7 @@ document.onkeyup = function(event) {
 		tries--;
 		updateTries();
 		if (tries > 0) { 
-			alert("This letter isn't in the word");
+			displayAlert("Nope!", "This letter isn't in the word");
 			return
 		} else {
 			loseGame();
@@ -109,7 +116,7 @@ function loseGame() {
 function winGame() {
 	victory++;
 	updateVictory();
-	alert("You WON!");
+	displayAlert("Hurray!", "You got it!");
 	startGame();
 }
 
@@ -118,10 +125,13 @@ var lossElement = document.getElementById("loss-number");
 lossElement.innerHTML = "" + defeat;
 
 
-
-
-
-
+function displayAlert(title, message) {	
+	var titleElement = document.getElementById('modal-title');
+	titleElement.innerHTML = title;
+	var bodyElement = document.getElementById('modal-body');
+	bodyElement.innerHTML = message;
+	$('#myModal').modal('show');
+}
 
 
 

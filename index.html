@@ -12,24 +12,48 @@
 		</div>
 	</div>
 	<hr>
+	<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 id="modal-title" class="modal-title">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p id="modal-body">Stuff</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 	<div class="row game-body">
 		<div class="col-md-6">
 			<div id="status">
-			<div class="instructions">
-				<p>
-					Press any letter to get started. If you guess wrong 7 times then you lose. If you guess right before your tries are up then you win!
-				</p>	
-			</div>
-			<div id="wins"> 
-				<h2>Wins: <span id="win-number">0</span></h2>
-			</div>
-			<div id="losses">
-				<h2>Losses: <span id="loss-number">0</span></h2>
-			</div>
-			<div id="tries">
-				<h2>Tries: <span id="tries-number">7</span></h2>
+				<div class="instructions">
+					<p>
+						Press any letter to get started. If you guess wrong 7 times then you lose. If you guess right before your tries are up then you win!
+					</p>	
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<div id="wins"> 
+						<h2>Wins: <span id="win-number">0</span></h2>
+					</div>
+					<div id="losses">
+						<h2>Losses: <span id="loss-number">0</span></h2>
+					</div>
+					<div id="tries">
+						<h2>Tries: <span id="tries-number">7</span></h2>
 
-			</div>
+					</div>
+					</div>
+					<div class="col-md-2">
+						
+						<div id="man" class="man-7"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-6">

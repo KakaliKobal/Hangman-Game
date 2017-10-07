@@ -27,3 +27,46 @@
 	padding: 20px
 }
 
+#man {
+	margin-top: 35px;
+}
+
+.man-7 {
+	width: 107px;
+	height: 110px;
+	background: url("../images/hsteps.jpg") 0 0;
+}
+
+.man-6 {
+	width: 107px;
+	height: 110px;
+	background: url("../images/hsteps.jpg") -107px 0;
+}
+.man-5 {
+	width: 107px;
+	height: 110px;
+	background: url("../images/hsteps.jpg") -214px 0;
+}
+
+.man-4 {
+	width: 107px;
+	height: 110px;
+	background: url("../images/hsteps.jpg") -319px 0;
+}
+.man-3 {
+	width: 107px;
+	height: 110px;
+	background: url("../images/hsteps.jpg") -422px 0;
+}
+
+.man-2 {
+	width: 107px;
+	height: 110px;
+	background: url("../images/hsteps.jpg") -532px 0;
+}
+
+.man-1 {
+	width: 107px;
+	height: 110px;
+	background: url("../images/hsteps.jpg") -633px 0;
+}
