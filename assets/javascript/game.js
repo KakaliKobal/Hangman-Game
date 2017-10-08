@@ -75,7 +75,7 @@ function getAllIndexes(arr, val) {
 
 document.onkeyup = function(event) {
 	var userGuess = event.key;
-
+	userGuess = userGuess.toLowerCase();
 	if (userGuess.replace(/^[A-Za-z]/g, "") != "")
 		return;
 
